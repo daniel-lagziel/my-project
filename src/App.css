@@ -1,38 +1,225 @@
+body {
+  height: 100%;
+min-width: 100vh;
+  margin: 0;
+  background-size:100% 100% ;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: 'no-repeat';
+}
+.headerDiv{
+  padding: 10px;
+}
+.bg{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
 .App {
   text-align: center;
+  padding: 0px;
+}
+.favoriteCard{
+  font-size: 40px;
+  border-radius: 40px; 
+  background: rgba(88, 146, 233, 0.3);
+}
+.fiveDaysCard{
+  font-size: 30px;
+  border-radius: 20px;
+padding: 10px;
+background: rgba(88, 146, 233, 0.3);
+
+}
+.iconFiveDays{
+  width: 150px;
+  height: 150px;
+}
+.fiveDaysDiv{ 
+  flex-wrap:wrap;
+}
+.buttonHome{
+  font-size: 40px;
+  font-weight: bold;
+  background-color: Transparent;
+  cursor:pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* .iconFavorieCard{
+  width: 120px;
+  height: 120px;
+} */
+
+
+@media (max-width: 768px){ /* small */
+  .favoriteCard{
+    font-size: 20px;
+    border-radius: 40px; 
+  }  
+  .iconFiveDays{
+    width: 60px;
+    height: 60px;
+  }
+  .buttonHome{
+  font-size: 20px;
+  }
+  .todayIcon{
+    width: 100px;
+    height: 100px;
+  }
+  
+.fiveDaysDiv{ 
+  flex-wrap:wrap;
+}
+.iconFavorieCard{
+  width: 60px;
+  height: 60px;
+}
+.fiveDaysCard{
+  font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}  
+@media (min-width: 768px){/* big */
+  .headerDiv{
+    font-size: 40px;
+  }
+  .favoriteCard{
+    font-size: 40px;
+    border-radius: 40px;
+  }
+  .buttonHome{
+    font-size: 30px;
+    }  
+  .fiveDaysCard{
+    font-size: 20px;
+  }
+  .iconFiveDays{
+    width: 85px;
+    height: 85px;
+  }
+  .toDayDiv{
+    font-size: 35px;
+  }
+.todayIcon{
+  width: 105px;
+  height: 105px;
+}
+.favoriteCard{
+  font-size: 35px;
+  border-radius: 40px; 
+}  
+.iconFavorieCard{
+  width: 105px;
+  height: 105px;
+}
+
+}
+@media (min-width: 992px){
+  .fiveDaysCard{
+    font-size: 25px;
+  }
+  .buttonHome{
+    font-size: 40px;
+    }
+
+  .iconFiveDays{
+    width: 95px;
+    height: 95px;
+  }
+  .todayIcon{
+    width: 140px;
+    height: 140px;  
+  }
+  .favoriteCard{
+    font-size: 40px;
+    border-radius: 40px; 
+  }  
+  .iconFavorieCard{
+    width: 140px;
+    height: 140px;
+  }
+  
+}
+@media (min-width: 1200px){
+  .iconFiveDays{
+    width: 200px;
+    height: 200px;
+  }
+  .buttonHome{
+    font-size: 50px;
+    }
+
+  .fiveDaysCard{
+    font-size: 25px;
+  }
+  .todayIcon{
+    width: 220px;
+    height: 220px;  
+  }
+  .favoriteCard{
+    font-size: 50px;
+    border-radius: 50px; 
+  }  
+  .iconFavorieCard{
+    width: 220px;
+    height: 220px;
   }
 }
+.favoriteCardDiv{
+  font-size: 40px;
+  border-radius: 40px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fiveDaysDiv{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+/* .try{background-color: rgba(0, 0, 0, .18);} */
+.AutoCompleteText{
+  width: 80%;
+  border: #282c34 solid 1px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1) rgba(0, 0, 0, .18);
+  height: 100%;
+  margin: 0;
+width: 100%;
+}
+.AutoCompleteText_input{
+width: 100%;
+top: 1px;
+border: none;
+font-size: 24px;
+box-sizing: border-box;
+padding: 10px 5px;
+border: solid white;
+}
+.AutoCompleteText_li{
+  padding: 10px 5px;
+  
+  cursor:pointer;
+  padding: 0;
+}
+.AutoCompleteText_li:hover{
+  text-decoration: underline;
+  background-color: rgba(128,128,128,0.20);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AutoCompleteText_ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px black;
 }
+
+
