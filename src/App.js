@@ -3,7 +3,8 @@ import './App.css';
 import Favorite from './components/Favorite';
 import Header from './components/Header';
 import Home from './components/Home';
-
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 function App() {
   const style={backgroundImage:'url(https://wallpaperaccess.com/full/2113857.jpg)'};
