@@ -166,6 +166,7 @@ const rmoveFavorite=()=>{
 
   return (
     <div className="App">
+      <h1>heyy</h1>
       <Header setScrnFlag={setScrnFlag}/>
       <hr/>
       {changeScrn()}
